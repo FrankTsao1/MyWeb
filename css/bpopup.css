@@ -1,0 +1,40 @@
+p h1{
+
+    color: #fbffff;
+}
+#leftMenu ul li img{
+    width: 160px;
+    height: auto;
+    border-radius: 15px;
+}
+img{
+    width: 200px;
+    height: 200px;
+}
+body{
+    font-family: 微軟正黑體;
+}
+.popup{
+    background: rgba(0, 0, 0, 0.8); /*箱子的背景顏色*/
+    border-radius: 10px;
+    box-shadow: 0 0 25px 5px rgb(255, 149, 212); /*箱子周遭的霓虹燈*/
+    color: rgb(99, 178, 255); /*標題顏色*/
+     /* 隨著螢幕變大變小 */
+    min-width: 300px;
+    min-height: 100px;
+    padding: 20px;
+    display: none; /*先關掉 先不顯示*/
+}
+.bClose{
+    background: rgba(255, 255, 255, 0.71); /*關閉見的背景顏色*/
+    border-radius: 7px;
+    box-shadow: 0 2px 3px rgb(255, 255, 255); /*關閉見的周遭的霓虹燈*/
+    color: red;  /*關閉建 裡面字的顏色*/
+    font: bold 150% sans-serif;
+    padding:  2px 6px 2px;
+    cursor: pointer;
+    display: block;
+    position: absolute; /* 配合 top 與 right 定位 */
+    right: 9px;
+    top: 9px;
+}

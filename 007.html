@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VR 虛擬實境</title>
+
+    <link rel="shortcut icon" href="img/Title-Logo.png">
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="css/default.css">
+    <link href="css/word.css" rel="stylesheet" type="text/css" />
+
+    <link rel="stylesheet" href="css/components.css">
+      <link rel="stylesheet" href="css/responsee.css">
+
+      <!-- CUSTOM STYLE -->
+      <link rel="stylesheet" href="css/template-style.css">
+      <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+      <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+      <script type="text/javascript" src="js/modernizr.js"></script>
+      <script type="text/javascript" src="js/responsee.js"></script>
+
+    <script src='js/jquery-2.1.1.min.js'></script>
+    <style>
+        /* Go Top 按鈕 */
+        #goTop {
+            position: fixed;
+            bottom: 20px; /* 與下方的距離, 也可改為百分比, 即為距離螢幕下方的百分比 */
+            right: 20px; /* 與右方的距離 */
+            width: 40px; /* 按鈕原始寬度 */
+            height: 40px; /* 按鈕原始高度 */
+            opacity: 0.4; /* 按鈕原始透明度 */
+            z-index: 10;
+            cursor: pointer;
+            transition: all .5s; /* 動畫效果 持續期間 */
+            -webkit-transition: all .5s;
+            -moz-transition: all .5s;
+        }
+        #goTop:hover { /* 滑鼠經過按鈕時 */
+            opacity: 1; /* 透明度 */
+            width: 65px; /* 按鈕寬度 */
+            height: 65px; /* 按鈕高度 */
+        }
+    </style>
+   </head>
+   <style>
+       body{
+           font-family: Arial , 微軟正黑體;
+       }
+   </style>
+   <body class="size-1140">
+      <div id="all-content" class="with-sticky-footer">
+
+          <!-- TOP NAV WITH LOGO -->
+          <header>
+              <nav>
+                  <div class="line">
+                      <div class="s-12 l-2">
+                          <img class="s-5 l-12 center"src="img/logo.png">
+                      </div>
+                      <div class="top-nav s-12 l-10 right">
+                          <p class="nav-text">點我打開選單</p>
+                          <ul class="right">
+                              <li><a href="index.html">首頁</a></li>
+                              <li>
+                                  <a>VR介紹</a>
+                                  <ul>
+                                      <li>
+                                          <a>什麼是VR？</a>
+                                          <ul>
+                                              <li><a href="001.html">VR的由來</a></li>
+                                              <li><a href="001-1.html">VR的技術</a></li>
+                                              <li><a href="002.html">程式結合</a></li>
+                                              <li><a href="003.html">未來趨勢</a></li>
+                                          </ul>
+                                      </li><li><a href="004.html">VR產品介紹</a></li>
+                                      <li><a href="005.html">VR世界分布圖</a></li>
+                                  </ul>
+                              </li>
+                              <li>
+                                  <a>VR程式應用</a>
+                                  <ul>
+                                      <li><a href="008-1.html">醫 療 訓 練</a></li>
+                                      <li><a href="008-2.html">飛 行 訓 練</a></li>
+                                      <li><a href="008-3.html">汽 車 保 養</a></li>
+                                      <li><a href="008-4.html">駕 駛 培 訓</a></li>
+                                      <li><a href="008-5.html">射 擊 訓 練</a></li>
+                                      <li><a href="008-6.html">職 場 訓 練</a></li>
+                                      <li><a href="008-7.html">烹 飪 訓 練</a></li>
+                                  </ul>
+                              <li>
+                                  <a>聯絡我們</a>
+                                  <ul>
+                                      <li>
+                                          <a>FaceBook</a>
+                                          <ul><li><a href="https://www.facebook.com/VR-%E8%99%9B%E6%93%AC%E5%AF%A6%E5%A2%83-224491814598989/?ref=bookmarks" target="_blank">VR虛擬實境</a></li></ul>
+                                      </li>
+                                      <li><a href="https://accounts.google.com/ServiceLogin?service=mail&passive=true&rm=false&continue=https://mail.google.com/mail/&ss=1&scc=1&ltmpl=default&ltmplcache=2&emr=1&osid=1#inboxl" target="_blank">E-mail</a></li>
+                                      <li><a href="https://twitter.com/" target="_blank">Twitter</a></li>
+                                      <li><a href="http://www.tnu.edu.tw/" target="_blank">東南科技大學</a></li>
+                                  </ul>
+                              </li>
+                              <li>
+                                  <a>關於我們</a>
+                                  <ul>
+                                      <li><a href="006.html">組 員 介 紹</a></li>
+                                      <li><a href="007.html">參 考 文 獻</a></li>
+                                  </ul>
+                              </li>
+                          </ul>
+                      </div>
+                  </div>
+              </nav>
+          </header>
+          <section>
+              <!-- FIRST BLOCK -->
+
+             <div id="first-block">
+                 <div class="line">
+                     <div class="margin-bottom">
+                         <div class="margin">
+                             <article class="s-12">
+                                 <div style="border-bottom: solid 1px black;text-align:left;">
+                                     現在位置：<a href="index.html"> 首頁</a> > 關於我們 > 參考文獻
+                                 </div>
+                                 <div>
+                                     <br>
+                                     <h1>參考文獻</h1>
+                                     <br><br>
+                                         <table cellpadding="10" border='1' align="center" valign="center" >
+                                             <tr><td>Youtube</td><td><a href="https://www.youtube.com.tw/" target="_blank" style="color: red">https://www.youtube.com.tw/</a></td></tr>
+                                             <tr><td>HTV VIVE 官網</td><td><a href="https://www.htcvive.com/tw/" target="_blank" style="color: red">https://www.htcvive.com/tw/</a></td></tr>
+                                             <tr><td>PlayStation VR</td><td><a href="https://www.playstation.com/en-au/explore/playstation-vr/" target="_blank" style="color: red">https://www.playstation.com/en-au/explore/playstation-vr/</a></td></tr>
+                                             <tr><td>Samsung Gear VR</td><td><a href="http://www.samsung.com/tw/consumer/mobile-phones/galaxy-gear/galaxy-gear/SM-R322NZWABRI" target="_blank" style="color: red">http://www.samsung.com/tw/consumer/mobile-phones/galaxy-gear/galaxy-gear/SM-R322NZWABRI</a></td></tr>
+                                             <tr><td>Oculus　Rift</td><td><a href="https://www.oculus.com/en-us/rift/" target="_blank" style="color: red">https://www.oculus.com/en-us/rift/</a></td></tr>
+                                             <tr><td>LG 360 VR</td><td><a href="http://www.lg.com/us/lg-friends/lg-LGR100.AVRZTS-360-vr" target="_blank" style="color: red">http://www.lg.com/us/lg-friends/lg-LGR100.AVRZTS-360-vr</a></td></tr>
+                                             <tr><td>Google Cardboard VR</td><td><a href="https://vr.google.com/cardboard/" target="_blank" style="color: red">https://vr.google.com/cardboard/</a></td></tr>
+                                             <tr><td>3 Glasses D2</td><td><a href="http://the3glasses.com/twd/" target="_blank" style="color: red">http://the3glasses.com/twd/</a></td></tr>
+                                             <tr><td>ZEISS VR ONE</td><td><a href="http://vrone.tw/" target="_blank" style="color: red">http://vrone.tw/</a></td></tr>
+                                             <tr><td>Noon VR</td><td><a href="http://www.noonvr.com/tw/view/main" target="_blank" style="color: red">http://www.noonvr.com/tw/view/main</a></td></tr>
+                                             <tr><td>虛擬實境</td><td><a href="http://www.wikiwand.com/zh-tw/%E8%99%9A%E6%8B%9F%E7%8E%B0%E5%AE%9E" target="_blank" style="color: red">http://www.wikiwand.com/zh-tw/%E8%99%9A%E6%8B%9F%E7%8E%B0%E5%AE%9E</a></td></tr>
+                                             <tr><td>Gifs.com | Animated Gif Maker and Gif Editor</td><td><a href="https://gifs.com/" target="_blank" style="color: red">https://gifs.com/</a></td></tr>
+                                             <tr><td>tavar</td><td><a href="http://www.tavar.tw/" target="_blank" style="color: red">http://www.tavar.tw/</a></td></tr>
+                                             <tr><td>Wikipedia - Jaron Lanier</td><td><a href="https://en.wikipedia.org/wiki/Jaron_Lanier" target="_blank" style="color: red">https://en.wikipedia.org/wiki/Jaron_Lanier</a></td></tr>
+                                             <tr><td>DailyView 網路溫度計 - 時事網路大數據分析</td><td><a href="http://dailyview.tw/" target="_blank" style="color: red">http://dailyview.tw/</a></td></tr>
+                                             <tr><td>TechNews 科技新報</td><td><a href="http://technews.tw/" target="_blank" style="color: red">http://technews.tw/</a></td></tr>
+                                             <tr><td>jQuery之家</td><td><a href="http://www.htmleaf.com/" target="_blank" style="color: red">http://www.htmleaf.com/</a></td></tr>
+                                             <tr><td>男丁格爾</td><td><a href="http://abgne.tw/" target="_blank" style="color: red">http://abgne.tw/</a></td></tr>
+                                             <tr><td>VR 虛擬實境數位雜誌</td><td><a href="https://blog.virtualrealityreporter.com/" target="_blank" style="color: red">https://blog.virtualrealityreporter.com/</a></td></tr>
+                                             <tr><td>手機王</td><td><a href="http://www.sogi.com.tw/" target="_blank" style="color: red">http://www.sogi.com.tw/</a></td></tr>
+                                             <tr><td>Carl Zeiss VR One 頭戴裝置主站動手玩</td><td><a href="http://chinese.engadget.com/2014/12/04/zeiss-smartphone-vr-headset-works-great-if-youve-got-the-right/" target="_blank" style="color: red">http://chinese.engadget.com/2014/12/04/zeiss-smartphone-vr-headset-works-great-if-youve-got-the-right/</a></td></tr>
+                                             <tr><td>一次搞懂虛擬實境VR、混合實境MR、擴增實境AR</td><td><a href="http://www.inside.com.tw/2015/10/08/what_are_vr_mr_ar" target="_blank" style="color: red">http://www.inside.com.tw/2015/10/08/what_are_vr_mr_ar</a></td></tr>
+                                             <tr><td>WEBTECH 網頁設計教學站</td><td><a href="http://www.webtech.tw/" target="_blank" style="color: red">http://www.webtech.tw/</a></td></tr>
+                                             <tr><td>Wibibi 網頁設計教學百科</td><td><a href="http://www.wibibi.com/" target="_blank" style="color: red">http://www.wibibi.com/</a></td></tr>
+                                             <tr><td>虛擬實境 - 維基百科</td><td><a href="https://zh.wikipedia.org/wiki/%E8%99%9A%E6%8B%9F%E7%8E%B0%E5%AE%9E/" target="_blank" style="color: red">https://zh.wikipedia.org/wiki/%E8%99%9A%E6%8B%9F%E7%8E%B0%E5%AE%9E/</a></td></tr>
+                                             <tr><td>Oculus VR - 維基百科</td><td><a href="https://zh.wikipedia.org/wiki/Oculus_VR" target="_blank" style="color: red">https://zh.wikipedia.org/wiki/Oculus_VR</a></td></tr>
+                                             <tr><td>三星Gear VR - 維基百科</td><td><a href="https://zh.wikipedia.org/wiki/%E4%B8%89%E6%98%9FGear_VR" target="_blank" style="color: red">https://zh.wikipedia.org/wiki/%E4%B8%89%E6%98%9FGear_VR</a></td></tr>
+                                             <tr><td>Google Cardboard - 維基百科</td><td><a href="https://zh.wikipedia.org/wiki/Google_Cardboard" target="_blank" style="color: red">https://zh.wikipedia.org/wiki/Google_Cardboard</a></td></tr>
+                                             <tr><td>VRWiki - Zeiss VR One</td><td><a href="https://vrwiki.wikispaces.com/Zeiss+VR+One" target="_blank" style="color: red">https://vrwiki.wikispaces.com/Zeiss+VR+One</a></td></tr>
+                                         </table>
+
+
+                                 </div>
+                             </article>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+         </section>
+         <!-- FOOTER -->
+         <div id="footer-content" class="sticky-footer">
+            <footer style="text-align:center;">
+
+                <div>
+                    Copyright © 2016 VR 虛擬實境 |
+                    <a href="006.html"> 關於我們 </a> |
+                    <a href="009.html"> 連絡我們 </a> |
+                    <a href="index.html"> 點我回首頁 </a> |
+                </div>
+
+            </footer>
+         </div>
+      </div>
+
+      <!-- Go Top 按鈕+動畫 start -->
+      <img id="goTop" src="img/gotop.jpg" title="回到最上層"/>
+      <script>
+          $.extend($.easing, {
+              easeOutExpo: function (x, t, b, c, d) {
+                  return (t==d) ? b+c : c * (-Math.pow(2, -10 * t/d) + 1) + b;
+              }
+          });
+          $("#goTop").click(function(){
+              $("html, body").animate({scrollTop: 0}, 1000, "easeOutExpo");
+          });
+      </script>
+      <!-- Go Top 按鈕+動畫 end, Designed by WFU BLOG -->
+   </body>
+</html>

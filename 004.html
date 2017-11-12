@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VR 虛擬實境</title>
+
+    <link rel="shortcut icon" href="img/Title-Logo.png">
+    <link href="css/bpopup.css" rel="stylesheet" type="text/css" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="css/default.css">
+    <link href="css/word.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="cs/normalize.css">
+    <link rel="stylesheet" type="text/cs" href="css/default.css">
+
+    <link rel="stylesheet" href="css/components.css">
+      <link rel="stylesheet" href="css/responsee.css">
+
+      <!-- CUSTOM STYLE -->
+      <link rel="stylesheet" href="css/template-style.css">
+
+      <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+      <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+      <script type="text/javascript" src="js/modernizr.js"></script>
+      <script type="text/javascript" src="js/responsee.js"></script>
+
+    <script src='js/jquery-2.1.1.min.js'></script>
+    <style>
+        /* Go Top 按鈕 */
+        #goTop {
+            position: fixed;
+            bottom: 20px; /* 與下方的距離, 也可改為百分比, 即為距離螢幕下方的百分比 */
+            right: 20px; /* 與右方的距離 */
+            width: 40px; /* 按鈕原始寬度 */
+            height: 40px; /* 按鈕原始高度 */
+            opacity: 0.4; /* 按鈕原始透明度 */
+            z-index: 10;
+            cursor: pointer;
+            transition: all .5s; /* 動畫效果 持續期間 */
+            -webkit-transition: all .5s;
+            -moz-transition: all .5s;
+        }
+        #goTop:hover { /* 滑鼠經過按鈕時 */
+            opacity: 1; /* 透明度 */
+            width: 65px; /* 按鈕寬度 */
+            height: 65px; /* 按鈕高度 */
+        }
+    </style>
+
+   </head>
+
+   <style>
+       body{
+           font-family: Arial , 微軟正黑體;
+       }
+       #gallery-wrapper {
+           position: relative;
+           max-width: 75%;
+           width: 75%;
+           margin:50px auto;
+       }
+       img.thumb {
+           width: 100%;
+           max-width: 100%;
+           height: auto;
+       }
+       .white-panel {
+           position: absolute;
+           background: white;
+           border-radius: 5px;
+           box-shadow: 0px 1px 2px rgba(0,0,0,0.3);
+           padding: 10px;
+       }
+       .white-panel h1 {
+           font-size: 1em;
+       }
+       .white-panel h1 a {
+           color: #A92733;
+       }
+       .white-panel:hover {
+           box-shadow: 1px 1px 10px rgba(0,0,0,0.5);
+           margin-top: -5px;
+           -webkit-transition: all 0.3s ease-in-out;
+           -moz-transition: all 0.3s ease-in-out;
+           -o-transition: all 0.3s ease-in-out;
+           transition: all 0.3s ease-in-out;
+       }
+       .show:hover{
+           cursor: pointer;
+       }
+       h2{
+           color: darkred;
+           font-weight: bold;
+           font-size: 17.5px;
+       }
+</style>
+
+   <body class="size-1140">
+      <div id="all-content" class="with-sticky-footer">
+
+          <!-- TOP NAV WITH LOGO -->
+          <header>
+              <nav>
+                  <div class="line">
+                      <div class="s-12 l-2">
+                          <img class="s-5 l-12 center"src="img/logo.png">
+                      </div>
+                      <div class="top-nav s-12 l-10 right">
+                          <p class="nav-text">點我打開選單</p>
+                          <ul class="right">
+                              <li><a href="index.html">首頁</a></li>
+                              <li>
+                                  <a>VR介紹</a>
+                                  <ul>
+                                      <li>
+                                          <a>什麼是VR？</a>
+                                          <ul>
+                                              <li><a href="001.html">VR的由來</a></li>
+                                              <li><a href="001-1.html">VR的技術</a></li>
+                                              <li><a href="002.html">程式結合</a></li>
+                                              <li><a href="003.html">未來趨勢</a></li>
+                                          </ul>
+                                      </li><li><a href="004.html">VR產品介紹</a></li>
+                                      <li><a href="005.html">VR世界分布圖</a></li>
+                                  </ul>
+                              </li>
+                              <li>
+                                  <a>VR程式應用</a>
+                                  <ul>
+                                      <li><a href="008-1.html">醫 療 訓 練</a></li>
+                                      <li><a href="008-2.html">飛 行 訓 練</a></li>
+                                      <li><a href="008-3.html">汽 車 保 養</a></li>
+                                      <li><a href="008-4.html">駕 駛 培 訓</a></li>
+                                      <li><a href="008-5.html">射 擊 訓 練</a></li>
+                                      <li><a href="008-6.html">職 場 訓 練</a></li>
+                                      <li><a href="008-7.html">烹 飪 訓 練</a></li>
+                                  </ul>
+                              <li>
+                                  <a>聯絡我們</a>
+                                  <ul>
+                                      <li>
+                                          <a>FaceBook</a>
+                                          <ul><li><a href="https://www.facebook.com/VR-%E8%99%9B%E6%93%AC%E5%AF%A6%E5%A2%83-224491814598989/?ref=bookmarks" target="_blank">VR虛擬實境</a></li></ul>
+                                      </li>
+                                      <li><a href="https://accounts.google.com/ServiceLogin?service=mail&passive=true&rm=false&continue=https://mail.google.com/mail/&ss=1&scc=1&ltmpl=default&ltmplcache=2&emr=1&osid=1#inboxl" target="_blank">E-mail</a></li>
+                                      <li><a href="https://twitter.com/" target="_blank">Twitter</a></li>
+                                      <li><a href="http://www.tnu.edu.tw/" target="_blank">東南科技大學</a></li>
+                                  </ul>
+                              </li>
+                              <li>
+                                  <a>關於我們</a>
+                                  <ul>
+                                      <li><a href="006.html">組 員 介 紹</a></li>
+                                      <li><a href="007.html">參 考 文 獻</a></li>
+                                  </ul>
+                              </li>
+                          </ul>
+                      </div>
+                  </div>
+              </nav>
+          </header>
+          <section>
+              <!-- FIRST BLOCK -->
+
+             <div id="first-block">
+                 <div class="line">
+                     <div class="margin-bottom">
+                         <div class="margin">
+                             <article class="s-12">
+                                 <div style="border-bottom: solid 1px black;text-align:left;">
+                                     現在位置：<a href="index.html"> 首頁</a> > VR介紹 > VR產品介紹
+                                 </div>
+                                 <br>
+                                 <h1>VR的產品介紹</h1>
+                                 <br><br>
+                                 <section id="gallery-wrapper">
+                                     <article class="white-panel">
+                                         <img id="AA" class="show" src="img/bpopup/p01-small.jpg" class="thumb">
+                                         <h2>Noon VR</h2>
+                                         <p>來自 南韓</p>
+                                     </article>
+                                     <article class="white-panel">
+                                         <img id="BB" class="show" src="img/bpopup/p02-small.jpg" class="thumb">
+                                         <h2>3Glasses D2</h2>
+                                         <p>來自 深圳</p>
+                                     </article>
+                                     <article class="white-panel">
+                                         <img id="CC" class="show" src="img/bpopup/p03-small.jpg" class="thumb">
+                                         <h2>SAMSUNG Gear VR</h2>
+                                         <p>來自 南韓</p>
+                                     </article>
+                                     <article class="white-panel">
+                                         <img id="DD" class="show" src="img/bpopup/p04-small.jpg" class="thumb">
+                                         <h2>Oculus Rift</h2>
+                                         <p>來自 美國</p>
+                                     </article>
+                                     <article class="white-panel">
+                                         <img id="EE" class="show" src="img/bpopup/p05-small.jpg" class="thumb">
+                                         <h2>Google Cardboard</h2>
+                                         <p>來自 美國</p>
+                                     </article>
+                                     <article class="white-panel">
+                                         <img id="FF" class="show" src="img/bpopup/p08-small.jpg" class="thumb">
+                                         <h2>ZEISS VR ONE</h2>
+                                         <p>來自 德國</p>
+                                     </article>
+                                     <article class="white-panel">
+                                         <img id="GG" class="show" src="img/bpopup/p09-small.jpg" class="thumb">
+                                         <h2>Sony PlayStation VR</h2>
+                                         <p>來自 日本</p>
+                                     </article>
+                                     <article class="white-panel">
+                                         <img id="HH" class="show" src="img/bpopup/p10-small.jpg" class="thumb">
+                                         <h2>HTC Vive</h2>
+                                         <p>來自 台灣</p>
+                                     </article>
+                                     <article class="white-panel">
+                                         <img id="II" class="show" src="img/bpopup/p11-small.jpg" class="thumb">
+                                         <h2>LG 360 VR</h2>
+                                         <p>來自 南韓</p>
+                                     </article>
+                                 </section>
+
+                             </article>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+         </section>
+
+
+          <!--彈跳文字開始囉！-->
+          <div id="AApopup" class="popup"><!-- 01要彈出來的箱子 -->
+              <span class="bClose"><span>X</span></span> <!--與 div 一樣，都是箱子，只是 span 是小箱子 ，不換行，由座向右排列-->
+              <div> <!--這裡開始要呈現內容-->
+                  <h1 style="color: #2fa8ec;padding: 20px 20px 20px 20px ;">Noon VR 功能特色</h1>
+
+                  <p style="color: white;text-align:left;">
+                      ◎ 可以調整焦距<br>
+                      ◎ 支援螢幕尺寸4.7-5.5英吋的智慧手機<br>
+                      ◎ 擁有特製的APP，需要輸入驗證碼才能用NoonVR<br>
+                      ◎ 擁有抗霧通風孔<br>
+                  </p>
+              </div>
+          </div>
+          <div id="BBpopup" class="popup"><!-- 02要彈出來的箱子 -->
+              <span class="bClose"><span>X</span></span> <!--與 div 一樣，都是箱子，只是 span 是小箱子 ，不換行，由座向右排列-->
+              <div> <!--這裡開始要呈現內容-->
+                  <h1 style="color: #2fa8ec;padding: 20px 20px 20px 20px;">3Glasses D2 開拓者版功能特色</h1>
+                  <p style="color: white;text-align:left;">
+                      ◎ 搭載5.5 吋 2,560 x 1,440pixels 解析度 TFT 顯示螢幕（534ppi）<br>
+                      ◎ 雙非球面高透光學鏡片<br>
+                      ◎ 三軸陀螺儀、三軸加速傳感器、三軸磁感應傳感器<br>
+                      ◎ 支持 HDMI、USB 2.0<br>
+                  </p>
+              </div>
+          </div>
+          <div id="CCpopup" class="popup"><!-- 03要彈出來的箱子 -->
+              <span class="bClose"><span>X</span></span> <!--與 div 一樣，都是箱子，只是 span 是小箱子 ，不換行，由座向右排列-->
+              <div> <!--這裡開始要呈現內容-->
+                  <h1 style="color: #2fa8ec;padding: 20px 20px 20px 20px;">SAMSUNG Gear VR 功能特色</h1>
+                  <p style="color: white;text-align:left;">
+                      ◎ 擁有 96 度視野光學鏡片<br>
+                      ◎ 加速感應器、陀螺儀、趨近感應器<br>
+                      ◎ 可透過 "Oculus" 商店取得多種影片內容<br>
+                      ◎ 內附預載 360 度環景影片系統<br>
+                      ◎ 可與 Galaxy Note 5、Galaxy S6 edge+ 、S6 以及 S6 edge 行動裝置搭配使用<br>
+                  </p>
+              </div>
+          </div>
+          <div id="DDpopup" class="popup"><!-- 04要彈出來的箱子 -->
+              <span class="bClose"><span>X</span></span> <!--與 div 一樣，都是箱子，只是 span 是小箱子 ，不換行，由座向右排列-->
+              <div> <!--這裡開始要呈現內容-->
+                  <h1 style="color: #2fa8ec;padding: 20px 20px 20px 20px;">Oculus Rift 功能特色</h1>
+                  <p style="color: white;text-align:left;">
+                      ◎ 相容於 64 位元 Windows 7 SP1 以上之作業系統<br>
+                      ◎ 可以與支援VR裝置的 Xbox 360 遊戲 一起暢玩<br>
+                      ◎ 配備耳機、麥克風、傳感器、Xbox 手柄<br>
+                  </p>
+              </div>
+          </div>
+          <div id="EEpopup" class="popup"><!-- 05要彈出來的箱子 -->
+              <span class="bClose"><span>X</span></span> <!--與 div 一樣，都是箱子，只是 span 是小箱子 ，不換行，由座向右排列-->
+              <div> <!--這裡開始要呈現內容-->
+                  <h1 style="color: #2fa8ec;padding: 20px 20px 20px 20px;">Google Cardboard 功能特色</h1>
+                  <p style="color: white;text-align:left;">
+                      ◎ 價格便宜，組裝方便<br>
+                      ◎ 可放置 4 吋至 6 吋螢幕尺寸的智慧型手機<br>
+                      ◎ 支援 YouTube 的 3D 影片播放<br>
+                  </p>
+              </div>
+          </div>
+          <div id="FFpopup" class="popup"><!-- 08要彈出來的箱子 -->
+              <span class="bClose"><span>X</span></span> <!--與 div 一樣，都是箱子，只是 span 是小箱子 ，不換行，由座向右排列-->
+              <div> <!--這裡開始要呈現內容-->
+                  <h1 style="color: #2fa8ec;padding: 20px 20px 20px 20px ;">ZEISS VR ONE 功能特色</h1>
+                  <p style="color: white;text-align:left;">
+                      ◎ 可放置 4.4 吋至 5.5 吋螢幕尺寸的智慧型手機<br>
+                      ◎ 可拆卸式頭戴<br>
+                      ◎ 可拆卸式面罩<br>
+                      ◎ 左右眼採用精密蔡司鏡頭<br>
+                      ◎ 可觀看 4K UHD 影像<br>
+                      ◎ 享有 360 度影片、遊戲體驗<br>
+                  </p>
+              </div>
+          </div>
+          <div id="GGpopup" class="popup"><!-- 09要彈出來的箱子 -->
+              <span class="bClose"><span>X</span></span> <!--與 div 一樣，都是箱子，只是 span 是小箱子 ，不換行，由座向右排列-->
+              <div> <!--這裡開始要呈現內容-->
+                  <h1 style="color: #2fa8ec;padding: 20px 20px 20px 20px ;">Sony PlayStation VR 功能特色</h1>
+                  <p style="color: white;text-align:left;">
+                      ◎ 5.7 吋 OLED 螢幕<br>
+                      ◎ 左右眼各搭載 1,920 x 1,080pixels 螢幕<br>
+                      ◎ 採用 USB、HDMI 接孔<br>
+                      ◎ 內建加速度計、陀螺儀傳感器<br>
+                      ◎ 可與家用遊戲機 PS4 搭配使用<br>
+                  </p>
+              </div>
+          </div>
+          <div id="HHpopup" class="popup"><!-- 10要彈出來的箱子 -->
+              <span class="bClose"><span>X</span></span> <!--與 div 一樣，都是箱子，只是 span 是小箱子 ，不換行，由座向右排列-->
+              <div> <!--這裡開始要呈現內容-->
+                  <h1 style="color: #2fa8ec;padding: 20px 20px 20px 20px ;">HTC Vive 功能特色</h1>
+                  <p style="color: white;text-align:left;">
+                      ◎ 左右眼各搭載 1,200 x 1,080 像素螢幕<br>
+                      ◎ 兩段式扳機按鍵、無線控制器、雷射定位器<br>
+                      ◎ 它擁有前置相機<br>
+                      ◎ 螢幕每秒高達 90 幀，所以擁有高畫質畫面及絕佳的音響效果<br>
+                  </p>
+              </div>
+          </div>
+          <div id="IIpopup" class="popup"><!-- 11要彈出來的箱子 -->
+              <span class="bClose"><span>X</span></span> <!--與 div 一樣，都是箱子，只是 span 是小箱子 ，不換行，由座向右排列-->
+              <div> <!--這裡開始要呈現內容-->
+                  <h1 style="color: #2fa8ec;padding: 20px 20px 20px 20px ;">LG 360 VR 功能特色</h1>
+                  <p style="color: white;text-align:left;">
+                      ◎ 搭載 1.88 吋的螢幕<br>
+                      ◎ 左右眼各搭配 9600 x 720pixels 解析度 IPS LCD 螢幕（639ppi）<br>
+                      ◎ 內建 STM32F411 晶片<br>
+                      ◎ 兩段式扳機按鍵、無線控制器、雷射定位器<br>
+                      ◎ 內建陀螺儀與加速度計六軸感應器<br>
+                      ◎ 採用 USB Type-C 連接線<br>
+                  </p>
+              </div>
+          </div>
+
+          <!--彈跳文字結束囉！-->
+
+
+          <!-- FOOTER -->
+         <div id="footer-content" class="sticky-footer">
+            <footer style="text-align:center;">
+
+                <div>
+                    Copyright © 2016 VR 虛擬實境 |
+                    <a href="006.html"> 關於我們 </a> |
+                    <a href="009.html"> 連絡我們 </a> |
+                    <a href="007.html"> 參考文獻 </a> |
+                    <a href="index.html"> 點我回首頁 </a> |
+                </div>
+
+            </footer>
+         </div>
+      </div>
+
+      <script>window.jQuery || document.write('<script src="js/jquery-1.11.0.min.js"><\/script>')</script>
+      <script src="js/pinterest_grid.js"></script>
+      <script type="text/javascript">
+          $(function(){
+              $("#gallery-wrapper").pinterest_grid({
+                  no_columns: 4,
+                  padding_x: 10,
+                  padding_y: 10,
+                  margin_bottom: 50,
+                  single_column_breakpoint: 700
+              });
+
+          });
+      </script>
+
+      <script src="js/jquery.bpopup.min-zz.js"></script>
+      <script type="text/javascript">
+          $(function(){
+              $("#AA").on("click",function(e){
+                  e.preventDefault();
+                  $("#AApopup").bPopup({ //參考指令 http://dinbror.dk/bpopup/
+                      modalClose: true,
+                      opacity: 0.6,
+                      positionStyle: 'fixed' //'fixed' or 'absolute'
+                  });
+              });
+              $("#BB").on("click",function(e){
+                  e.preventDefault();
+                  $("#BBpopup").bPopup({ //參考指令 http://dinbror.dk/bpopup/
+                      modalClose: true,
+                      opacity: 0.6,
+                      positionStyle: 'fixed' //'fixed' or 'absolute'
+                  });
+              });
+              $("#CC").on("click",function(e){
+                  e.preventDefault();
+                  $("#CCpopup").bPopup({ //參考指令 http://dinbror.dk/bpopup/
+                      modalClose: true,
+                      opacity: 0.6,
+                      positionStyle: 'fixed' //'fixed' or 'absolute'
+                  });
+              });
+              $("#DD").on("click",function(e){
+                  e.preventDefault();
+                  $("#DDpopup").bPopup({ //參考指令 http://dinbror.dk/bpopup/
+                      modalClose: true,
+                      opacity: 0.6,
+                      positionStyle: 'fixed' //'fixed' or 'absolute'
+                  });
+              });
+              $("#EE").on("click",function(e){
+                  e.preventDefault();
+                  $("#EEpopup").bPopup({ //參考指令 http://dinbror.dk/bpopup/
+                      modalClose: true,
+                      opacity: 0.6,
+                      positionStyle: 'fixed' //'fixed' or 'absolute'
+                  });
+              });
+              $("#FF").on("click",function(e){
+                  e.preventDefault();
+                  $("#FFpopup").bPopup({ //參考指令 http://dinbror.dk/bpopup/
+                      modalClose: true,
+                      opacity: 0.6,
+                      positionStyle: 'fixed' //'fixed' or 'absolute'
+                  });
+              });
+              $("#GG").on("click",function(e){
+                  e.preventDefault();
+                  $("#GGpopup").bPopup({ //參考指令 http://dinbror.dk/bpopup/
+                      modalClose: true,
+                      opacity: 0.6,
+                      positionStyle: 'fixed' //'fixed' or 'absolute'
+                  });
+              });
+              $("#HH").on("click",function(e){
+                  e.preventDefault();
+                  $("#HHpopup").bPopup({ //參考指令 http://dinbror.dk/bpopup/
+                      modalClose: true,
+                      opacity: 0.6,
+                      positionStyle: 'fixed' //'fixed' or 'absolute'
+                  });
+              });
+              $("#II").on("click",function(e){
+                  e.preventDefault();
+                  $("#IIpopup").bPopup({ //參考指令 http://dinbror.dk/bpopup/
+                      modalClose: true,
+                      opacity: 0.6,
+                      positionStyle: 'fixed' //'fixed' or 'absolute'
+                  });
+              });
+          });
+      </script>
+      <!-- Go Top 按鈕+動畫 start -->
+      <img id="goTop" src="img/gotop.jpg" title="回到最上層"/>
+      <script>
+          $.extend($.easing, {
+              easeOutExpo: function (x, t, b, c, d) {
+                  return (t==d) ? b+c : c * (-Math.pow(2, -10 * t/d) + 1) + b;
+              }
+          });
+          $("#goTop").click(function(){
+              $("html, body").animate({scrollTop: 0}, 1000, "easeOutExpo");
+          });
+      </script>
+      <!-- Go Top 按鈕+動畫 end, Designed by WFU BLOG -->
+   </body>
+</html>

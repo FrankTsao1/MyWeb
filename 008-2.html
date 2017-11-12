@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VR 虛擬實境</title>
+
+    <link rel="shortcut icon" href="img/Title-Logo.png">
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="css/default.css">
+    <link href="css/word.css" rel="stylesheet" type="text/css" />
+
+    <link rel="stylesheet" href="css/components.css">
+      <link rel="stylesheet" href="css/responsee.css">
+
+      <!-- CUSTOM STYLE -->
+      <link rel="stylesheet" href="css/template-style.css">
+      <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+      <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+      <script type="text/javascript" src="js/modernizr.js"></script>
+      <script type="text/javascript" src="js/responsee.js"></script>
+
+    <script src='js/jquery-2.1.1.min.js'></script>
+    <style>
+        /* Go Top 按鈕 */
+        #goTop {
+            position: fixed;
+            bottom: 20px; /* 與下方的距離, 也可改為百分比, 即為距離螢幕下方的百分比 */
+            right: 20px; /* 與右方的距離 */
+            width: 40px; /* 按鈕原始寬度 */
+            height: 40px; /* 按鈕原始高度 */
+            opacity: 0.4; /* 按鈕原始透明度 */
+            z-index: 10;
+            cursor: pointer;
+            transition: all .5s; /* 動畫效果 持續期間 */
+            -webkit-transition: all .5s;
+            -moz-transition: all .5s;
+        }
+        #goTop:hover { /* 滑鼠經過按鈕時 */
+            opacity: 1; /* 透明度 */
+            width: 65px; /* 按鈕寬度 */
+            height: 65px; /* 按鈕高度 */
+        }
+    </style>
+   </head>
+   <style>
+       body{
+           font-family: Arial , 微軟正黑體;
+       }
+   </style>
+   <body class="size-1140">
+      <div id="all-content" class="with-sticky-footer">
+
+          <!-- TOP NAV WITH LOGO -->
+          <header>
+              <nav>
+                  <div class="line">
+                      <div class="s-12 l-2">
+                          <img class="s-5 l-12 center"src="img/logo.png">
+                      </div>
+                      <div class="top-nav s-12 l-10 right">
+                          <p class="nav-text">點我打開選單</p>
+                          <ul class="right">
+                              <li><a href="index.html">首頁</a></li>
+                              <li>
+                                  <a>VR介紹</a>
+                                  <ul>
+                                      <li>
+                                          <a>什麼是VR？</a>
+                                          <ul>
+                                              <li><a href="001.html">VR的由來</a></li>
+                                              <li><a href="001-1.html">VR的技術</a></li>
+                                              <li><a href="002.html">程式結合</a></li>
+                                              <li><a href="003.html">未來趨勢</a></li>
+                                          </ul>
+                                      </li><li><a href="004.html">VR產品介紹</a></li>
+                                      <li><a href="005.html">VR世界分布圖</a></li>
+                                  </ul>
+                              </li>
+                              <li>
+                                  <a>VR程式應用</a>
+                                  <ul>
+                                      <li><a href="008-1.html">醫 療 訓 練</a></li>
+                                      <li><a href="008-2.html">飛 行 訓 練</a></li>
+                                      <li><a href="008-3.html">汽 車 保 養</a></li>
+                                      <li><a href="008-4.html">駕 駛 培 訓</a></li>
+                                      <li><a href="008-5.html">射 擊 訓 練</a></li>
+                                      <li><a href="008-6.html">職 場 訓 練</a></li>
+                                      <li><a href="008-7.html">烹 飪 訓 練</a></li>
+                                  </ul>
+                              <li>
+                                  <a>聯絡我們</a>
+                                  <ul>
+                                      <li>
+                                          <a>FaceBook</a>
+                                          <ul><li><a href="https://www.facebook.com/VR-%E8%99%9B%E6%93%AC%E5%AF%A6%E5%A2%83-224491814598989/?ref=bookmarks" target="_blank">VR虛擬實境</a></li></ul>
+                                      </li>
+                                      <li><a href="https://accounts.google.com/ServiceLogin?service=mail&passive=true&rm=false&continue=https://mail.google.com/mail/&ss=1&scc=1&ltmpl=default&ltmplcache=2&emr=1&osid=1#inboxl" target="_blank">E-mail</a></li>
+                                      <li><a href="https://twitter.com/" target="_blank">Twitter</a></li>
+                                      <li><a href="http://www.tnu.edu.tw/" target="_blank">東南科技大學</a></li>
+                                  </ul>
+                              </li>
+                              <li>
+                                  <a>關於我們</a>
+                                  <ul>
+                                      <li><a href="006.html">組 員 介 紹</a></li>
+                                      <li><a href="007.html">參 考 文 獻</a></li>
+                                  </ul>
+                              </li>
+                          </ul>
+                      </div>
+                  </div>
+              </nav>
+          </header>
+          <section>
+              <!-- FIRST BLOCK -->
+
+             <div id="first-block">
+                 <div class="line">
+                     <div class="margin-bottom">
+                         <div class="margin">
+                             <article class="s-12">
+                                 <div style="border-bottom: solid 1px black;text-align:left;">
+                                     現在位置：<a href="index.html"> 首頁</a> > VR程式應用 > 飛行訓練
+                                 </div>
+                                 <br>
+                                 <h1>VR的相關程式應用</h1>
+                                 <br><br>
+                                 <div style="margin: 0; ">
+
+<p style="text-align:left;">
+    　　這個程式叫做：《<a href="http://www.maxflightstick.com/store/" style="color: blue" target="_blank" title="Affordable Helicopter Simulator Control Systems">Max Flight Stick</a>》飛行模擬器，它是在PC上執行的，目前僅支援Oculus Rift。遊戲內容主要是讓玩家將扮演一位機師，必須要想辦法來完成所有關卡。如：起飛、降落、通過遊戲內的飛行點或是將敵機擊落。如果可以配合下方影片中的椅子、操作桿、撥鈕，那更一定要小心謹慎，會因為人為的疏失導致墜機呢！<br><br>
+    　　我覺得它可以幫助剛入行的機師或是想入這一行的人。因為剛進入這個行業後，一定不可能馬上出勤，或是開飛機載人，肯定是需要很長一段時間去訓練！但實際操作跟一般模擬器手感差很多的！尤其新手上路可能會怕而導致操控不當，就很可能發生意外。但可以藉由此軟體配合周邊配備，來模擬真實在飛機駕駛艙內的感覺，在這虛擬的世界裡做飛行訓練肯定能減少一些不必要的意外發生！<br>
+    <iframe width="100%" height="550" src="https://www.youtube.com/embed/75f12kDE2Pk" frameborder="0" allowfullscreen></iframe><br><br>
+</p>
+
+                                 </div>
+                             </article>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+         </section>
+         <!-- FOOTER -->
+         <div id="footer-content" class="sticky-footer">
+            <footer style="text-align:center;">
+
+                <div>
+                    Copyright © 2016 VR 虛擬實境 |
+                    <a href="006.html"> 關於我們 </a> |
+                    <a href="009.html"> 連絡我們 </a> |
+                    <a href="007.html"> 參考文獻 </a> |
+                    <a href="index.html"> 點我回首頁 </a> |
+                </div>
+
+            </footer>
+         </div>
+      </div>
+
+      <!-- Go Top 按鈕+動畫 start -->
+      <img id="goTop" src="img/gotop.jpg" title="回到最上層"/>
+      <script>
+          $.extend($.easing, {
+              easeOutExpo: function (x, t, b, c, d) {
+                  return (t==d) ? b+c : c * (-Math.pow(2, -10 * t/d) + 1) + b;
+              }
+          });
+          $("#goTop").click(function(){
+              $("html, body").animate({scrollTop: 0}, 1000, "easeOutExpo");
+          });
+      </script>
+      <!-- Go Top 按鈕+動畫 end, Designed by WFU BLOG -->
+   </body>
+</html>
